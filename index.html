@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" scale="1.0">
+    <title> Material adda.com </title>
+    <link rel="stylesheet" href="style.css">
+
+
+<style>
+  body {
+      background-color: rgb(238, 241, 242);
+      width: 100%; /* Set the width to 100% of the viewport */
+      height: 100vh; /* Set the height to 100% of the viewport height */
+      margin: 1px; /* Remove margins */
+      padding: 2px; /* Remove padding */
+  }
+      .dark-theme {background-color: rgba(196, 16, 16, 0.018);
+    border-radius: 100%;
+width: 24px;
+height: 24px;
+position: absolute;
+top: 5px;
+right: 0px;
+
+
+
+      right: 10px;
+      cursor: pointer;
+      z-index: 1;
+
+}
+
+#clsbtn{
+cursor: pointer;
+}
+
+#lgnbtn{
+cursor: pointer;
+}
+    .menu-bar {
+      position: absolute;
+      top: 100px;
+      right: 15px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .menu-bar span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #000;
+      margin-bottom: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .menu-bar:hover span {
+      background-color: #555;
+    }
+
+
+.rrr{
+/*background-color: #98e8f8;*/
+position: absolute;
+      top: 85px;
+      right: 0px;
+      z-index: 1;
+padding: 5px;
+
+}
+#home{
+  margin: 1px;
+  padding: 1px;
+}
+
+#about{
+  margin: 1px;
+  padding: 1px;
+}
+#services{
+  margin: 1px;
+  padding: 1px;
+}
+
+a:active{
+  color: green
+}
+
+a:hover{
+  color: rgb(248, 11, 11);
+}
+
+a:visited{
+  color: rgb(94, 7, 21);
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1200px) {
+  body h2 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  body h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  body h2 {
+    font-size:14px;
+}
+}
+
+
+
+/* menu bar content */
+
+@media(min-width:601px){
+.menu-bar{
+  display:none;
+}
+}
+
+@media (max-width: 768px) {
+  .menu-bar {
+    top: 40px;
+    right: 10px;
+  }
+  .menu-bar span {
+    width: 20px;
+    height:2px;
+}
+}
+
+
+
+#nvn{
+/*background-color:red;*/
+width: 100%;
+height:50px;
+margin-top: 30px;
+}
+
+
+
+h2{text-align: center;
+padding: 10px;
+margin:25px 5px;
+}
+
+.footer {
+background-color: #333;
+color: #fff;
+padding: 20px 0;
+}
+
+.footer .container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.footer .row {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.footer .col-md-4 #about {
+flex-basis: 33.33%;
+padding: 20px;
+}
+
+.footer h4 {
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.footer ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.footer li {
+margin-bottom: 10px;
+}
+
+.footer a {
+color: #fff;
+text-decoration: none;
+}
+
+.footer a:hover {
+color: #ccc;
+}
+
+
+.copyright {
+position: relative;
+background-color: #444;
+color: #fff;
+padding: 10px 0;
+text-align: center;
+clear:both;
+}
+
+/*left side links */
+
+#left-side{
+/*background-color: #f3c23b7c;*/
+ width: 150px;
+
+}
+
+.RT{
+/* background-color: #f7fa51;*/
+width: 21vh;
+}
+
+.MA{
+/* background-color: #45edf9;*/
+width: 19vh;
+}
+
+.about{
+/* background-color: #edf782;*/
+width: 18vh;
+
+}
+
+.follow{
+/* background-color: #ff4d53;*/
+width: 11vh;
+}
+
+.col-md-4{
+/* background-color: #a5f8f9;*/
+width: 18vh;}
+
+
+#aboutus{
+  /*background-color: #fcb6f4;*/
+  width: 25vh;}
+
+
+  #loginsection{
+
+    display: none;  }
+
+</style>
+
+
+    </head>
+    <body>
+
+     <div class="dark-theme" onclick=darktheme() ondblclick="lighttheme()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 2v9" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 13v9" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+     </div>
+
+<div id="lgnbtn"> Login </div>
+
+        <div id="nvn">
+<h2> Wel Come To Material Adda Page</h2>
+        </div>
+
+        <div class="menu-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="rrr" onmouseover="nvn(this)" onmouseout="nvne(this)">
+        <a href="home.html" id="home"> Home</a>
+        <a href="service.html" id="services">Services</a>
+        <a href="about.html" id="about">About</a>
+        <a href="contact.html" id="contact"> Contact Us</a>
+    </div>
+    <h4 class="MA">Material Adda&#128214;
+    </h4>
+
+    <h4 class="RT">Resources and Tools:</h4>
+
+    <div id="left-side" onmouseover="eleHover(this)" onmouseout="eleOut(this)">
+        <ul>
+<li><a href="material.com"> Study Materials</a><br></li>
+<li> <a href="course.com">Courses</a><br></li>
+<li> <a href="videoclses.html">Video Lectures</a><br></li>
+<li>        <a href="quiz">Quizzes and Assessments</a><br></li>
+    <li><a href="lib">E-Library</a><br></li>
+    <li><a href="Lrngtls">Learning Tools</a><br></li>
+    <li><a href="career">Career Resources</a><br></li>
+</ul>
+    </div>
+
+
+    <div class="login-page" id="loginsection">
+      <h3 id="login-title">Login</h3>
+      <div id="clsbtn">Close</div>
+        Enter User Name:
+        <input type="text" placeholder="user name"><br><br>
+        Password:
+        <input type="password"><br><br>
+        <button>Submit</button>
+        </div>
+
+        <h4 class="about">Site Information:</h4>
+    <div id="aboutus" onmouseover="elea(this)" onmouseout="eleoa(this)">
+
+    <ul>
+       <li> <a href="contct.html">Contact Us</a><br></li>
+    <li><a href="faq.html">FAQ</a><br></li>
+    <li><a href="terms">Terms and Conditions</a><br></li>
+    <li><a href="privcy">Privacy and Policy</a><br></li>
+    </ul>
+    </div>
+    <h4 class="follow">Follow Us</h4>
+
+    <div class="col-md-4" onmouseover="ele(this)" onmouseout="eleo(this)">
+
+        <ul>
+          <li><a href="#" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        </ul>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2024 Materials Adda - Your one-stop destination for educational materials and courses. All rights reserved.</p>
+
+  </div>
+</footer>
+
+
+        <script>
+
+const darktheme = function() {
+    document.querySelector("body").style.backgroundColor = "#1A1D23"
+    document.querySelector(".dark-theme").style.backgroundColor = "white"
+    document.querySelector("#nvn").style.backgroundColor = "#444"
+    document.querySelector("h2").style.color = "white"
+    document.querySelector(".MA").style.backgroundColor = "#444"
+    document.querySelector("h4").style.color = "white"
+    document.querySelector(".rrr").style.backgroundColor = "rgb(121, 119, 119)"
+    document.querySelector(".about").style.color = "white"
+    document.querySelector("#aboutus").style.backgroundColor = "rgb(121, 119, 119)"
+    document.querySelector(".RT").style.color = "white"
+    document.querySelector(".RT").style.backgroundColor = " #444"
+    document.querySelector(".col-md-4").style.backgroundColor = "rgb(121, 119, 119)"
+    document.querySelector("#left-side").style.backgroundColor = "rgb(121, 119, 119)"
+    document.querySelector(".about").style.color = "white"
+document.querySelector(".about").style.backgroundColor = "#444"
+document.querySelector(".follow").style.backgroundColor = "#444"
+document.querySelector(".follow").style.color = "white"
+  }
+
+  const lighttheme = function() {
+    document.body.style.backgroundColor = "rgb(238, 241, 242)"
+    document.querySelector(".dark-theme").style.backgroundColor = ""
+    document.querySelector("#nvn").style.backgroundColor = "rgb(238, 241, 242)"
+    document.querySelector("h2").style.color = "black"
+    document.querySelector(".MA").style.backgroundColor = "rgb(238, 241, 242)"
+    document.querySelector("h4").style.color = "black"
+    document.querySelector(".rrr").style.backgroundColor = "rgb(238, 241, 242)"
+    document.querySelector(".about").style.color = "black"
+    document.querySelector("#aboutus").style.backgroundColor = "rgb(238, 241, 242)"
+    document.querySelector(".RT").style.backgroundColor = "rgb(238, 241, 242)"
+    document.querySelector(".RT").style.color = "black"
+    document.querySelector(".col-md-4").style.backgroundColor = "rgb(238, 241, 242)"
+    document.querySelector("#left-side").style.backgroundColor = "rgb(238, 241, 242)"
+    document.querySelector(".about").style.color = "black"
+    document.querySelector(".about").style.backgroundColor = "rgb(238, 241, 242)"
+    document.querySelector(".follow").style.backgroundColor = "rgb(238, 241, 242)"
+document.querySelector(".follow").style.color = "black"
+
+}
+const loginButton = document.getElementById("lgnbtn")
+const loginpage = document.getElementById("loginsection")
+const main = document.querySelector("#left-side")
+const rt =  document.querySelector("#aboutus")
+const site = document.querySelector(".col-md-4")
+const res = document.querySelector(".RT")
+const ab = document.querySelector(".about")
+const fol = document.querySelector(".follow")
+
+
+
+document.getElementById("lgnbtn").addEventListener('click',showLogin)
+
+function showLogin (){
+  main.style.display = "none"
+  rt.style.display = "none"
+  site.style.display = "none"
+  res.style.display = "none"
+ab.style.display = "none"
+fol.style.display = "none"
+
+  loginpage.style.display = "block"
+
+}
+
+document.getElementById("clsbtn").addEventListener('click', hidelogin)
+function hidelogin( ){
+main.style.display = "block";
+rt.style.display = "block";
+ site.style.display = "block"
+ res.style.display = "block"
+ab.style.display = "block"
+fol.style.display = "block"
+
+loginpage.style.display = "none"
+}
+
+function eleHover(onhover) {
+  onhover.style.backgroundColor = "rgb(246, 172, 247)"
+}
+function eleOut(onout) {
+  onout.style.backgroundColor = "rgb(238, 241, 242)"
+}
+
+function ele(onele) {
+  onele.style.backgroundColor = "rgb(246, 172, 247)"
+}
+function eleo(oneleo){
+  oneleo.style.backgroundColor = "rgb(238, 241, 242)"
+}
+function elea(ea){
+  ea.style.backgroundColor = "rgb(246, 172, 247)"
+}
+function eleoa(eo){
+  eo.style.backgroundColor = "rgb(238, 241, 242)"
+}
+
+function nvn(nvnn){
+  nvnn.style.backgroundColor = "rgb(246, 172, 247)"
+}
+function nvne(nvnea){
+  nvnea.style.backgroundColor = "rgb(238, 241, 242)"
+}
+
+
+        </script>
+    </body>
+
+</html>
